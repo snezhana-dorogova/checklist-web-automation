@@ -32,11 +32,16 @@ The checklist of the web page testing using automation.
 
 ### Buttons
 
+- A button matches the corporate style.
+- A text of the button is localized to all supported languages.
+- Style hover, focus, and active states differently.
+- Call-to-action.
 - TODO
 
 ### Internal links
 
 - An internal link matches the corporate style.
+- Style hover, focus, and visited states differently.
 - The link is opened on a new browser tab (if required).
 - Ensure all internal URLs respond with 200 status code.
 
@@ -53,7 +58,10 @@ The checklist of the web page testing using automation.
 
 ### Icons
 
-- TODO
+- Format: icon font, svg.
+- Icons match the corporate style.
+- Ensure that users understand the meaning and purpose of icons. (Can users correctly guess what will happen once they interact with the icon?)
+- An icon functionality.
 
 ### Images
 
