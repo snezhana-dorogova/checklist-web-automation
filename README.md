@@ -9,26 +9,46 @@ The checklist of the web page testing using automation.
 - [Playwright Test 1.16+ - enables reliable end-to-end testing for modern web apps](https://playwright.dev/docs/intro/)
 - [CLD3 - a neural network model for language identification](https://github.com/google/cld3)
 
+## Run Playwright tests
+
+- To run tests add a spec title to the `package.json` file in the `test` script.
+- Set up all configuration parameters in a `playwright.config.mjs` file.
+- Execute tests:
+
+    ```
+    yarn test
+    ```
+    
+- Create an HTML report for resources saved in the folder `allure-results` and open report from the folder `allure-report`:
+
+    ```
+    yarn allure:report
+    ```
+
+## Tests
+
+- [Take a full-page screenshot for a set of viewports](tests/visual-testing/fullpage-screen.spec.mjs)
+
 ---
 
 ## Checklist of a web page testing
 
 ### title tag
 
-- Title matches the corporate style.
+- The title matches the corporate style.
 - Localized to all supported languages.
-- An optimal title tag length. Most desktop and mobile browsers are able to display the first 50–60 characters of a title tag.
+- An optimal title tag length. Most desktop and mobile browsers can display the first 50–60 characters of a title tag.
 
 ### meta description tag
 
 - Localized to all supported languages.
-- An optimal description length. Recommended description between 50–160 characters.
+- An optimal description length. The recommended description is between 50–160 characters.
 
 ### Texts
 
 - Each HTML heading (H1, H2, etc.) has a corporate font, size, weight.
 - Localized to all supported languages.
-- Wrap a long words on a small screens.
+- Wrap long words on a small screen.
 
 ### Buttons
 
@@ -41,15 +61,15 @@ The checklist of the web page testing using automation.
 ### Internal links
 
 - An internal link matches the corporate style.
-- Style hover, focus, and visited states differently.
+- Style hover, focus and visited states differently.
 - The link is opened on a new browser tab (if required).
-- Ensure all internal URLs respond with 200 status code.
+- Ensure all internal URLs respond with 200 status codes.
 
 ### External links
 
 - An external link matches the corporate style.
 - The link is opened on a new browser tab (if required).
-- Ensure all external URLs respond with 200 status code.
+- Ensure all external URLs respond with 200 status codes.
 
 ### Redirects and 404 error page
 
@@ -126,7 +146,7 @@ The checklist of the web page testing using automation.
 
 ### Downloads
 
-- File name
+- Filename
 - File extension
 - File size
 - TODO
