@@ -1,0 +1,16 @@
+{
+  "name": "checklist-web-automation",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test tests/visual-testing/fullpage-screen.spec.mjs --config=playwright.config.mjs --workers 4",
+    "allure:report": "allure generate ./allure-results --clean && allure open ./allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.16.3",
+    "allure-commandline": "2.13.8",
+    "allure-playwright": "2.0.0-beta.14"
+  },
+  "dependencies": {
+    "yarn": "1.22.17"
+  }
+}
