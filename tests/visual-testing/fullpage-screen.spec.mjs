@@ -6,7 +6,7 @@ test.describe.parallel(config.use.browserName, async () => {
     let viewports = [1920, 1440, 1024, 960, 768, 640, 360];
     let links = ['/'];
 
-    links.map(async (link) => {
+    links.forEach(link => {
         test.describe(link, async () => {
             test.beforeEach(async ({page}) => {
                 await page.goto(link);

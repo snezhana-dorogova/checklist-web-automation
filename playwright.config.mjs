@@ -16,7 +16,7 @@ const config = {
   expect: {
     timeout: 1000
   },
-  reporter: [['list'], ['allure-playwright']]
+  reporter: [['list'], ['html'], ['allure-playwright']]
 };
 
 export default config;

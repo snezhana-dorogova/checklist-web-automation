@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "test": "playwright test tests/visual-testing/fullpage-screen.spec.mjs --config=playwright.config.mjs --workers 4",
-    "allure:report": "allure generate ./allure-results --clean && allure open ./allure-report"
+    "allure:report": "allure generate ./allure-results --clean && allure open ./allure-report",
+    "playwright:report": "npx playwright show-report",
+    "playwright:browsers": "npx playwright install"
   },
   "devDependencies": {
-    "@playwright/test": "1.16.3",
+    "@playwright/test": "1.17.1",
     "allure-commandline": "2.13.8",
     "allure-playwright": "2.0.0-beta.14"
   },
