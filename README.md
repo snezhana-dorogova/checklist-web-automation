@@ -64,6 +64,7 @@ The checklist of the web page testing using automation.
 - Style hover, focus and visited states differently.
 - The link is opened on a new browser tab (if required).
 - Ensure all internal URLs respond with 200 status codes.
+- Localized to all supported languages using a path or subdomain.
 
 ### External links
 
@@ -165,6 +166,7 @@ The checklist of the web page testing using automation.
 
 - Email notification
 - Browser notification
+- 
 - TODO
 
 ### Modal window
